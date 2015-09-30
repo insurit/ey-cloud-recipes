@@ -14,7 +14,7 @@ define :load_sql_file, :db_name => nil, :extname => nil, :minimum_version => nil
       # elsif @node[:postgres_version].to_f >= [some future revision where syntax changes]
       elsif @node[:postgres_version] >= 9.1
         execute "Postgresql loading extension #{extname}" do
-          command %Q(psql -U postgres -d #{db_name} -c 'CREATE EXTENSION IF NOT EXISTS "#{extname}";')
+          command %Q(psql -U postgres -d #{db_name} -c 'CREATE EXTENSION IF NOT EXISTS "#{extname}" SCHEMA extensions;')
         end
       elsif @node[:postgres_version] >= 9.0
         execute "Postgresql loading contrib #{extname} on database #{db_name}" do
