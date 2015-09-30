@@ -20,7 +20,7 @@
 # include_recipe "ban"
 
 # uncomment to use the sidekiq recipe. See cookbooks/sidekiq/readme.md for documentation.
-# include_recipe "sidekiq"
+include_recipe "sidekiq"
 
 #uncomment to turn on memcached
 # include_recipe "memcached"
@@ -157,7 +157,7 @@
   # postgresql9_tablefunc "dbname"
   # postgresql9_test_parser "dbname"
   # postgresql9_unaccent "dbname"
-  # postgresql9_uuid_ossp "dbname"
+  postgresql9_uuid_ossp "dbname"
 
 
   # 9.1 and 9.2 Extensions
