@@ -157,7 +157,7 @@ include_recipe "sidekiq"
   # postgresql9_tablefunc "dbname"
   # postgresql9_test_parser "dbname"
   # postgresql9_unaccent "dbname"
-  postgresql9_uuid_ossp "dbname"
+  postgresql9_uuid_ossp "insurit"
 
 
   # 9.1 and 9.2 Extensions
