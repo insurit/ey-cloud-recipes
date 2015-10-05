@@ -176,3 +176,5 @@ include_recipe "sidekiq"
 #uncomment to include the motd customization related to the environment
 #include_recipe "env_motd"
 
+include_recipe "database_schema_search_path"
+
