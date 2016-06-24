@@ -8,5 +8,4 @@
 
 default[:packages] = [#{:name => "app-misc/wkhtmltopdf-bin", :version => "0.12.0_beta5"},
                       {:name => "media-gfx/wkhtmltopdf-bin", :version => "0.12.2.1"},
-                      {:name => "app-text/pdftk", :version => "2.02"},
-                       {:name => "dev-util/lockrun", :version => "2-r1"}]
+                      {:name => "app-text/pdftk", :version => "2.02"}]
