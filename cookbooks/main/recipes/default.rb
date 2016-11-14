@@ -1,8 +1,14 @@
+# uncomment to use a custom database.yml configuration
+# include_recipe "database_yml_custom"
+
 #execute "testing" do
 #  command %Q{
 #    echo "i ran at #{Time.now}" >> /root/cheftime
 #  }
 #end
+
+#uncomment to install aws-cli tools
+#include_recipe "aws_cli"
 
 # uncomment to deny access to /log, /config, and .git directories as well as any .yml files
 # include_recipe "deny-directories"
@@ -180,3 +186,16 @@ include_recipe "postgres_enable_threads"
 
 include_recipe "database_schema_search_path"
 
+#include_recipe "db_restore"
+
+#uncomment to install PHP 5.5.x
+#include_recipe "php55"
+
+#uncomment to install PHP 5.6.x
+#include_recipe "php56"
+
+#unncomment to install clamav
+#include_recipe "clamav"
+
+#uncomment to include the classiclink recipe
+#include_recipe "classiclink"
